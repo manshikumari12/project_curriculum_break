@@ -1,0 +1,186 @@
+
+#login {
+  margin: auto;
+  background: #ffff;
+  height: 46vh;
+  padding: 20px 10px 20px 30px;
+}
+input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin: 10px 0px 10px 0px;
+  border-bottom: 1px solid black;
+}
+.btn {
+  margin-top: 20px;
+  width: 92%;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  background-image: linear-gradient(to right, teal, green);
+  color: #ffff;
+}
+.btn:hover {
+  background-image: linear-gradient(to right, red, blue);
+}
+.heading {
+  text-align: center;
+  font-family: cursive;
+}
+label {
+  color: black;
+  font-family: 500;
+  font-size: 20px;
+  font-family: cursive;
+}
+#animationContainer {
+  position: relative;
+  width: 35%;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+}
+#animationRound {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  scale: 2.2;
+  background-image: linear-gradient(
+    90deg,
+    rgba(213, 62, 51, 1) 25%,
+    rgba(209, 167, 52, 1) 25%,
+    rgba(209, 167, 52, 1) 50%,
+    rgba(55, 122, 245, 1) 50%,
+    rgba(55, 122, 245, 1) 75%,
+    rgba(57, 153, 83, 1) 75%
+  );
+
+  z-index: -1;
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.forSignup>a{
+  color: teal;
+  text-decoration: none;
+}
+.forSignup{
+  text-align: center;
+  padding-top: 5px;
+}
+.forSignup>a:hover{
+  text-decoration: underline;
+  color: teal;
+}
+.forLogin{
+  text-align: center;
+  padding-top: 5px;
+}
+.forLogin>a{
+  color: teal;
+  text-decoration: none;
+}
+.forLogin>a:hover{
+  color: teal;
+  text-decoration: underline;
+}
+body {
+margin: 0%;
+padding: 0%;
+}
+
+@media only screen and (max-width: 1252px) and (min-width: 1022px) {
+  
+  .heading{
+    font-size: 28px;
+  }
+  #login {
+    height: 45vh;
+  }
+  #animationContainer {
+    width: 38%;
+  }
+  }
+@media only screen and (max-width: 1022px) and (min-width: 903px) {
+  
+    .heading{
+      font-size: 28px;
+    }
+    #login {
+      height: 45vh;
+    }
+    #animationContainer {
+      width: 43%;
+    }
+  }
+@media only screen and (max-width: 903px) and (min-width: 763px) {
+  
+      .heading{
+        font-size: 25px;
+      }
+      form > label {
+        font-size: 18px;
+      }
+      #login {
+        height: 44vh;
+      }
+      #animationContainer {
+        width: 46%;
+      }
+  }
+@media only screen and (max-width: 763px) and (min-width: 509px) {
+    .heading{
+      font-size: 22px;
+    }
+    form > label {
+      font-size: 16px;
+    }
+    #login {
+      height: 44vh;
+    }
+    #animationContainer {
+      width: 47%;
+    }
+    .btn{
+      padding: 5px;
+      
+    }
+    
+  }
+@media only screen and (max-width: 509px) and (min-width: 370px) {
+    .heading{
+      font-size: 20px;
+    }
+    form > label {
+      font-size: 15px;
+      line-height: 0%;
+    }
+    #login {
+      height: 43vh;
+    }
+    #animationContainer {
+      width: 50%;
+    }
+    .forLogin > span{
+      text-transform: none;
+    }
+    .btn{
+      padding: 2px;
+    }
+    .forSignup > span > span{
+      display: none;
+    }
+  }
+
